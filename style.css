@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(240, 226, 240);
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*button for adding notes*/
+.add {
+    background-color: silver;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    margin: 12px auto;
+    padding: 6px 12px;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+.note  {
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1) ;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+
+}
+
+.note .tools {
+    background-color: silver;
+    padding: 6px;
+    display: flex;
+    justify-content: flex-end;
+}
+.note .tools button {
+    /* for giving his parent color */
+    background-color: transparent;
+    color: rgb(17, 16, 16);
+    border: none;
+    font-size: 15px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.note .main {
+    background-color: #eee;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+.note textarea {
+    height: 250px;
+    width: 100%;
+    font-size: 12px;
+    border: none;
+    font-family: inherit;
+    outline: none;
+}
+.note .hidden {
+    display: none;
+}
+
+
